@@ -15,6 +15,10 @@
 		BD6138FA1D2B4F84007BA94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6138F81D2B4F84007BA94A /* LaunchScreen.storyboard */; };
 		BD6139051D2B4F84007BA94A /* Sci_LineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6139041D2B4F84007BA94A /* Sci_LineTests.m */; };
 		BD6139101D2B4F84007BA94A /* Sci_LineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD61390F1D2B4F84007BA94A /* Sci_LineUITests.m */; };
+		BD6139201D2B4FB1007BA94A /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD61391F1D2B4FB1007BA94A /* LineView.m */; };
+		BD6139231D2B53AE007BA94A /* backGroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6139221D2B53AE007BA94A /* backGroundLayer.m */; };
+		BD6139261D2B59C8007BA94A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6139251D2B59C8007BA94A /* UIColor+Hex.m */; };
+		BD6139291D2B8712007BA94A /* PointLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6139281D2B8712007BA94A /* PointLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		BD61390B1D2B4F84007BA94A /* Sci_LineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sci_LineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD61390F1D2B4F84007BA94A /* Sci_LineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sci_LineUITests.m; sourceTree = "<group>"; };
 		BD6139111D2B4F84007BA94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD61391E1D2B4FB1007BA94A /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		BD61391F1D2B4FB1007BA94A /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		BD6139211D2B53AE007BA94A /* backGroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backGroundLayer.h; sourceTree = "<group>"; };
+		BD6139221D2B53AE007BA94A /* backGroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backGroundLayer.m; sourceTree = "<group>"; };
+		BD6139241D2B59C8007BA94A /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		BD6139251D2B59C8007BA94A /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		BD6139271D2B8712007BA94A /* PointLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointLayer.h; sourceTree = "<group>"; };
+		BD6139281D2B8712007BA94A /* PointLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 				BD6138EE1D2B4F84007BA94A /* AppDelegate.m */,
 				BD6138F01D2B4F84007BA94A /* ViewController.h */,
 				BD6138F11D2B4F84007BA94A /* ViewController.m */,
+				BD61391D1D2B4F9B007BA94A /* LineView */,
 				BD6138F31D2B4F84007BA94A /* Main.storyboard */,
 				BD6138F61D2B4F84007BA94A /* Assets.xcassets */,
 				BD6138F81D2B4F84007BA94A /* LaunchScreen.storyboard */,
@@ -138,6 +151,21 @@
 				BD6139111D2B4F84007BA94A /* Info.plist */,
 			);
 			path = Sci_LineUITests;
+			sourceTree = "<group>";
+		};
+		BD61391D1D2B4F9B007BA94A /* LineView */ = {
+			isa = PBXGroup;
+			children = (
+				BD61391E1D2B4FB1007BA94A /* LineView.h */,
+				BD61391F1D2B4FB1007BA94A /* LineView.m */,
+				BD6139211D2B53AE007BA94A /* backGroundLayer.h */,
+				BD6139221D2B53AE007BA94A /* backGroundLayer.m */,
+				BD6139271D2B8712007BA94A /* PointLayer.h */,
+				BD6139281D2B8712007BA94A /* PointLayer.m */,
+				BD6139241D2B59C8007BA94A /* UIColor+Hex.h */,
+				BD6139251D2B59C8007BA94A /* UIColor+Hex.m */,
+			);
+			name = LineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6139291D2B8712007BA94A /* PointLayer.m in Sources */,
+				BD6139201D2B4FB1007BA94A /* LineView.m in Sources */,
+				BD6139261D2B59C8007BA94A /* UIColor+Hex.m in Sources */,
 				BD6138F21D2B4F84007BA94A /* ViewController.m in Sources */,
 				BD6138EF1D2B4F84007BA94A /* AppDelegate.m in Sources */,
 				BD6138EC1D2B4F83007BA94A /* main.m in Sources */,
+				BD6139231D2B53AE007BA94A /* backGroundLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

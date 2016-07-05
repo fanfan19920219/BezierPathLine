@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LineView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    LineView *lineView = [[LineView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/2)];
+    [self.view addSubview:lineView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
